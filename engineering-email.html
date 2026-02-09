@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Email | Lucas Le</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Seattle_4.jpg') center/cover fixed;
+      color: #292524; 
+      line-height: 1.6; 
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1000;
+    }
+    header { 
+      border-bottom: 1px solid #000000; 
+      background: #fff; 
+    }
+    .header-inner { 
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .logo { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; }
+    nav { display: flex; gap: 24px; font-size: 14px; }
+    nav a { color: #a8a29e; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #1c1917; }
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 73px;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    main { padding: 48px 0; }
+    .back { font-size: 14px; color: #a8a29e; margin-bottom: 24px; display: inline-block; transition: color 0.2s; }
+    .back:hover { color: #57534e; }
+    .genre { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #a8a29e; margin-bottom: 8px; }
+    h2 { font-size: 24px; font-weight: 500; margin-bottom: 12px; }
+    .context { font-size: 14px; color: #78716c; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e7e5e4; }
+    .document { background: #fff; border: 1px solid #e7e5e4; border-radius: 8px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .email-header { border-bottom: 1px solid #e7e5e4; padding-bottom: 20px; margin-bottom: 20px; }
+    .email-field { font-size: 14px; margin-bottom: 6px; }
+    .email-field span { color: #78716c; display: inline-block; width: 60px; }
+    .email-field strong { font-weight: 500; color: #1c1917; }
+    .email-subject { font-size: 16px; font-weight: 600; color: #1c1917; margin-top: 12px; }
+    .email-body p { font-size: 14px; color: #57534e; margin-bottom: 16px; }
+    .email-signature { margin-top: 24px; padding-top: 16px; border-top: 1px solid #f5f5f4; font-size: 14px; color: #78716c; }
+    .email-signature strong { color: #57534e; font-weight: 500; }
+    footer { border-top: 1px solid #e7e5e4; margin-top: 80px; }
+    .footer-inner { padding: 24px 0; text-align: center; font-size: 14px; color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="logo">Lucas Le | Technical Writing Portfolio</div>
+        <nav>
+  <a href="index.html" class="active">Work</a>
+  <a href="about.html">About</a>
+  <a href="reflection.html">Reflection</a>
+</nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container">
+      <a href="index.html" class="back">← Back to Work</a>
+      <div class="genre">Engineering Email</div>
+      <h2>Engineering Email: Dev Build Issue</h2>
+      <p class="context">Engineering emails serve as coordination tools and permanent records of decisions. They balance professionalism with efficiency and often document technical issues for audits.</p>
+      
+      <div class="document">
+        <div class="email-header">
+          <div class="email-field"><span>From:</span> Lucas Le &lt;lucasle@lucasinc.com&gt;</div>
+          <div class="email-field"><span>To:</span> James Boss &lt;jboss@lucasinc.com&gt;</div>
+          <div class="email-field"><span>Date:</span> February 4, 2026, 10:47 AM</div>
+          <div class="email-subject">Subject: Le Calc – Math Functions Routing Through AI (Dev Build Issue)</div>
+        </div>
+
+        <div class="email-body">
+          <p>Hi James,</p>
+          <p>I wanted to flag an issue I ran into while testing basic math functions on the Le Calc dev build this morning.</p>
+          <p>All arithmetic operations are currently returning "Thinking..." followed by a rounded answer after a couple seconds of delay. For example, 5/2 returns "Thinking..." and then outputs "2" instead of "2.5" instantly. I've attached the full test results, but this behavior is consistent across addition, subtraction, multiplication, and division.</p>
+          <p>I believe the issue is that operations are being routed through the AI-integrated functions. My understanding was that standard math should calculate instantly on-device, with AI reserved for advanced features only.</p>
+          <p>Given the February 18 deliverable for working calculator functions, I wanted to bring this to your attention early. Let me know how you'd like me to proceed.</p>
+          <p>Thanks,</p>
+        </div>
+
+        <div class="email-signature">
+          <strong>Lucas Le</strong><br>
+          Junior Engineer<br>
+          206-581-XXXX
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        © 2026 Lucas Le
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

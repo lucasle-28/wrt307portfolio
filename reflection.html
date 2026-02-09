@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflection | Lucas Le</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Seattle_4.jpg') center/cover fixed;
+      color: #292524; 
+      line-height: 1.6; 
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1000;
+    }
+    header { 
+      border-bottom: 1px solid #000000; 
+      background: #fff; 
+    }
+    .header-inner { 
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .logo { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; }
+    nav { display: flex; gap: 24px; font-size: 14px; }
+    nav a { color: #a8a29e; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #1c1917; }
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 73px;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    main { padding: 48px 0; }
+    h1 { font-size: 24px; font-weight: 500; margin-bottom: 32px; letter-spacing: -0.02em; }
+    .reflection-content { font-size: 16px; color: #44403c; }
+    .reflection-content p { margin-bottom: 24px; }
+    footer { border-top: 1px solid #e7e5e4; margin-top: 80px; }
+    .footer-inner { padding: 24px 0; text-align: center; font-size: 14px; color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="logo">Lucas Le | Technical Writing Portfolio</div>
+        <nav>
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="reflection.html" class="active">Reflection</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container">
+      <h1>Reflection</h1>
+      
+      <div class="reflection-content">
+        <p>Composing these texts, I was AI-assisted in the planning and execution phase. With both those phases, I used AI to augment my writing and ideas. This was done by prompting my overall vision for the writing sample, the ideas in that sample that I wished to emphasize, and aspects I thought were underemphasized in previous iterations.</p>
+        
+        <p>Looking at the samples, I solidified my understanding of the requirements different genres needed. For example, before this class, I wasn't aware of the technicalities and context needed to write Product Briefs and Internal Memos. With what I learned, I'm able to write stylistically correct memos and contribute more to product briefs (product briefs are more of an engineering-marketing collaboration). In doing so, I learned that AMD's audience is primarily technical audiences, with an emphasis on engineers and product managers. In terms of reader-centered writing, all writing was concise and got to the point, which I found was a big foundation of reader-centered writing.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        © 2026 Lucas Le
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Le | Technical Writing Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Seattle_4.jpg') center/cover fixed;
+      color: #292524; 
+      line-height: 1.6; 
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1000;
+    }
+    header { 
+      border-bottom: 1px solid #000000; 
+      background: #fff; 
+    }
+    .header-inner { 
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .logo { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; }
+    nav { display: flex; gap: 24px; font-size: 14px; }
+    nav a { color: #a8a29e; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #1c1917; }
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 73px;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    main { padding: 48px 0; }
+    .subtitle { color: #1f1e1d; margin-bottom: 40px; }
+    .samples { display: flex; flex-direction: column; gap: 32px; }
+    .sample { border-left: 2px solid #e7e5e4; padding: 8px 0 8px 24px; transition: border-color 0.2s; }
+    .sample:hover { border-color: #a8a29e; }
+    .genre { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #a8a29e; margin-bottom: 4px; }
+    .sample h2 { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+    .sample p { font-size: 14px; color: #78716c; margin-bottom: 12px; }
+    .sample a { font-size: 14px; color: #a8a29e; transition: color 0.2s; }
+    .sample a:hover { color: #57534e; }
+    footer { border-top: 1px solid #e7e5e4; margin-top: 80px; }
+    .footer-inner { padding: 24px 0; text-align: center; font-size: 14px; color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="logo">Lucas Le | Technical Writing Portfolio</div>
+        <nav>
+  <a href="index.html" class="active">Work</a>
+  <a href="about.html">About</a>
+  <a href="reflection.html">Reflection</a>
+</nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container">
+      <p class="subtitle"></p>
+      
+      <div class="samples">
+        <article class="sample">
+          <div class="genre">Product Brief</div>
+          <h2>Le Calc Product Brief</h2>
+          <p>A technical product brief for an AI-powered scientific calculator co-developed with AMD. Showcases product specifications, key features, and target applications in a concise, scannable format.</p>
+          <a href="product-brief.html">View Document →</a>
+        </article>
+
+        <article class="sample">
+          <div class="genre">Engineering Email</div>
+          <h2>Engineering Email: Dev Build Issue</h2>
+          <p>An internal engineering email flagging a critical bug where basic math functions route through AI instead of calculating instantly. Demonstrates clear problem identification and professional escalation.</p>
+          <a href="engineering-email.html">View Document →</a>
+        </article>
+
+        <article class="sample">
+          <div class="genre">Internal Memo</div>
+          <h2>Internal Memo: AMD Partnership</h2>
+          <p>A company-wide memo announcing a strategic partnership with AMD for the Le Calc product. Balances informational content with motivational language while maintaining confidentiality protocols.</p>
+          <a href="internal-memo.html">View Document →</a>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        © 2026 Lucas Le
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

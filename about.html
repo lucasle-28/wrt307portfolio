@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Lucas Le</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Seattle_4.jpg') center/cover fixed;
+      color: #292524; 
+      line-height: 1.6; 
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1000;
+    }
+    header { 
+      border-bottom: 1px solid #000000; 
+      background: #fff; 
+    }
+    .header-inner { 
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .logo { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; }
+    nav { display: flex; gap: 24px; font-size: 14px; }
+    nav a { color: #a8a29e; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #1c1917; }
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 73px;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    main { padding: 48px 0; }
+    .about-grid { display: flex; flex-direction: column; gap: 40px; }
+    @media (min-width: 640px) { .about-grid { flex-direction: row; } }
+    .photo-col { flex: 0 0 200px; padding-top: 40px}
+    .photo { width: 100%; aspect-ratio: 0.5; background: #e7e5e4; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #a8a29e; font-size: 14px; overflow: hidden; margin-top: 24px}
+    .photo img { width: 100%; height: 100%; object-fit: cover; }
+    .bio-col { flex: 1; padding-top: 10px;}
+    .bio-col h2 { font-size: 24px; font-weight: 500; margin-bottom: 16px; }
+    .bio-col p { color: #57534e; margin-bottom: 16px; }
+    .contact { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e7e5e4; }
+    .contact-label { font-size: 14px; color: #a8a29e; margin-bottom: 8px; }
+    .contact-item { color: #57534e; margin-bottom: 16px; }
+    .contact a { transition: color 0.2s; }
+    .contact a:hover { color: #1c1917; }
+    footer { border-top: 1px solid #e7e5e4; margin-top: 80px; }
+    .footer-inner { padding: 24px 0; text-align: center; font-size: 14px; color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="logo">Lucas Le | Technical Writing Portfolio</div>
+        <nav>
+  <a href="index.html" class="active">Work</a>
+  <a href="about.html">About</a>
+  <a href="reflection.html">Reflection</a>
+</nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container">
+      <div class="about-grid">
+        <div class="photo-col">
+          <div class="photo">
+            <img src="IMG_6316.jpg" alt="Lucas Le">
+          </div>
+        </div>
+        
+        <div class="bio-col">
+          <h2>About Me</h2>
+          <p>First of all, thanks for checking out my website. I'm a 2nd generation Vietnamese
+             American born in Seattle, Washington. I enjoy going on scenic hikes--which
+             the PNW is known for, snowboarding with my friends, indoor bouldering, and travelling!
+             Just this last summer, I went to Japan, Korea, Singapore, Cambodia, and Vietnam, where I
+             was able to immerse myself in the lifestyle of those on the other side of the world.</p>
+          
+          <p>When I'm not grabbing food or shopping with friends, I love tinkering and making
+             little gadgets to make my life more convienent. Some examples are: a spotify companion app that
+             crops songs for me, a motion detector to alert me when my parents come home, a defacto GPS
+             tracker which helps me find my friends while snowboarding, and much more.</p>
+          
+          <p>I'd love to talk about any of these experiences, feel free to contact me!</p>
+          
+          <div class="contact">
+            <p>Seattle, WA</p>
+            <a href="mailto:lle107@syr.edu">lle107@syr.edu</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        © 2026 Lucas Le
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

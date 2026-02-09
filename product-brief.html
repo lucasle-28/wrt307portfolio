@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Calc Product Brief | Lucas Le</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Seattle_4.jpg') center/cover fixed;
+      color: #292524; 
+      line-height: 1.6; 
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .header-wrapper {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 900px;
+      z-index: 1000;
+    }
+    header { 
+      border-bottom: 1px solid #000000; 
+      background: #fff; 
+    }
+    .header-inner { 
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .logo { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; }
+    nav { display: flex; gap: 24px; font-size: 14px; }
+    nav a { color: #a8a29e; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #1c1917; }
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 73px;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    main { padding: 48px 0; }
+    .back { font-size: 14px; color: #a8a29e; margin-bottom: 24px; display: inline-block; transition: color 0.2s; }
+    .back:hover { color: #57534e; }
+    .genre { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #a8a29e; margin-bottom: 8px; }
+    h2 { font-size: 24px; font-weight: 500; margin-bottom: 12px; }
+    .context { font-size: 14px; color: #78716c; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e7e5e4; }
+    .document { background: #fff; border: 1px solid #e7e5e4; border-radius: 8px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .document h3 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #78716c; margin: 24px 0 8px; }
+    .document h3:first-child { margin-top: 0; }
+    .document .title { font-size: 20px; font-weight: 600; margin-bottom: 4px; color: #1c1917; }
+    .document .subtitle { font-size: 14px; color: #78716c; margin-bottom: 24px; }
+    .document p { font-size: 14px; color: #57534e; margin-bottom: 12px; }
+    .document ul { font-size: 14px; color: #57534e; margin: 12px 0; padding-left: 20px; }
+    .document li { margin-bottom: 6px; }
+    .specs { display: grid; grid-template-columns: 140px 1fr; gap: 8px 16px; font-size: 14px; margin: 16px 0; }
+    .specs dt { color: #78716c; }
+    .specs dd { color: #57534e; }
+    .doc-footer { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e7e5e4; font-size: 12px; color: #a8a29e; }
+    footer { border-top: 1px solid #e7e5e4; margin-top: 80px; }
+    .footer-inner { padding: 24px 0; text-align: center; font-size: 14px; color: #a8a29e; }
+  </style>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="logo">Lucas Le | Technical Writing Portfolio</div>
+        <nav>
+        <a href="index.html" class="active">Work</a>
+        <a href="about.html">About</a>
+        <a href="reflection.html">Reflection</a>
+      </nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="container">
+      <a href="index.html" class="back">← Back to Work</a>
+      <div class="genre">Product Brief</div>
+      <h2>Le Calc Product Brief</h2>
+      <p class="context">Product briefs enable fast evaluation and align stakeholders by clearly outlining specifications, design, and the problem the product solves.</p>
+      
+      <div class="document">
+        <h3>Product Brief</h3>
+        <div class="title">Le Calc</div>
+        <div class="subtitle">AI-Powered Scientific Calculator</div>
+
+        <h3>Overview</h3>
+        <p>Designed for students, educators, and researchers, the Le Calc delivers powerful on-device AI capabilities in a familiar scientific calculator form factor. Co-developed with AMD, the A++ AMD Chip enables step-by-step problem solving, concept explanations, and camera-based input—all processed locally with no cloud storage.</p>
+        <ul>
+          <li>Discrete AI-integrated scientific calculator indistinguishable from traditional models</li>
+          <li>On-device AI processing via custom A++ AMD Chip co-developed with AMD</li>
+          <li>Step-by-step problem breakdown with concept explanations across all subjects</li>
+          <li>5MP top-edge camera for handwritten problem scanning</li>
+          <li>24-hour battery life for all-day use</li>
+          <li>Physical button keypad identical to standard scientific calculators</li>
+        </ul>
+
+        <h3>Key Features</h3>
+        <p><strong>On-Device AI Processing</strong> — A++ AMD Chip (125 MHz, 4 cores, 20W). All AI computation performed locally. No cloud connectivity required. No external usage history stored.</p>
+        <p><strong>Camera Input</strong> — 5MP top-edge camera. Scan handwritten problems directly. Instant AI-assisted solving.</p>
+        <p><strong>Discrete Design</strong> — Matte black finish. Form factor identical to TI-84. No visible AI branding or indicators.</p>
+
+        <h3>Technical Specifications</h3>
+        <dl class="specs">
+          <dt>Processor</dt><dd>A++ AMD Chip (co-developed with AMD)</dd>
+          <dt>Clock Speed</dt><dd>125 MHz</dd>
+          <dt>Cores</dt><dd>4</dd>
+          <dt>Power</dt><dd>20W</dd>
+          <dt>Display</dt><dd>3.5" Monochrome LCD, 320 × 240</dd>
+          <dt>Camera</dt><dd>5MP top-edge</dd>
+          <dt>Connectivity</dt><dd>USB-C, Wi-Fi 802.11 b/g/n</dd>
+          <dt>Dimensions</dt><dd>7.6" × 3.4" × 0.9"</dd>
+          <dt>Weight</dt><dd>9.2 oz</dd>
+          <dt>Battery</dt><dd>24-hour (typical use)</dd>
+          <dt>Finish</dt><dd>Matte black</dd>
+        </dl>
+
+        <h3>Target Applications</h3>
+        <p>High School & Secondary Education · Higher Education & STEM Coursework · Research & Academia · Standardized Test Preparation</p>
+
+        <h3>Availability & Pricing</h3>
+        <p>Expected Availability: Q3 2026<br>MSRP: $200 USD</p>
+
+        <div class="doc-footer">
+          LUCAS INC. Seattle, WA | www.lucasinc.com<br>
+          © 2026 Lucas Inc. All rights reserved.
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        © 2026 Lucas Le
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
