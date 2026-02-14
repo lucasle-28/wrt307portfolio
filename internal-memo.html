@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Email | Lucas Le</title>
+  <title>Internal Memo | Lucas Le</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
@@ -55,14 +55,11 @@
     h2 { font-size: 24px; font-weight: 500; margin-bottom: 12px; }
     .context { font-size: 14px; color: #78716c; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e7e5e4; }
     .document { background: #fff; border: 1px solid #e7e5e4; border-radius: 8px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-    .email-header { border-bottom: 1px solid #e7e5e4; padding-bottom: 20px; margin-bottom: 20px; }
-    .email-field { font-size: 14px; margin-bottom: 6px; }
-    .email-field span { color: #78716c; display: inline-block; width: 60px; }
-    .email-field strong { font-weight: 500; color: #1c1917; }
-    .email-subject { font-size: 16px; font-weight: 600; color: #1c1917; margin-top: 12px; }
-    .email-body p { font-size: 14px; color: #57534e; margin-bottom: 16px; }
-    .email-signature { margin-top: 24px; padding-top: 16px; border-top: 1px solid #f5f5f4; font-size: 14px; color: #78716c; }
-    .email-signature strong { color: #57534e; font-weight: 500; }
+    .memo-header { border-bottom: 1px solid #e7e5e4; padding-bottom: 20px; margin-bottom: 24px; }
+    .memo-field { font-size: 14px; margin-bottom: 6px; display: flex; }
+    .memo-field span { color: #78716c; font-weight: 500; width: 60px; flex-shrink: 0; }
+    .memo-field strong { font-weight: 500; color: #1c1917; }
+    .memo-body p { font-size: 14px; color: #57534e; margin-bottom: 16px; }
     footer { border-top: 1px solid #e7e5e4; margin-top: 80px; }
     .footer-inner { padding: 24px 0; text-align: center; font-size: 14px; color: #a8a29e; }
   </style>
@@ -84,31 +81,32 @@
   <div class="page-wrapper">
     <main class="container">
       <a href="index.html" class="back">← Back to Work</a>
-      <div class="genre">Engineering Email</div>
-      <h2>Engineering Email: Dev Build Issue</h2>
-      <p class="context">Engineering emails serve as coordination tools and permanent records of decisions. They balance professionalism with efficiency and often document technical issues for audits.</p>
+      <div class="genre">Internal Memo</div>
+      <h2>Internal Memo: AMD Partnership</h2>
+      <p class="context">Internal memos inform and align employees on important developments, ensuring they hear news from leadership before external sources. They create documented records of organizational communication.</p>
       
       <div class="document">
-        <div class="email-header">
-          <div class="email-field"><span>From:</span> Lucas Le &lt;lucasle@lucasinc.com&gt;</div>
-          <div class="email-field"><span>To:</span> James Boss &lt;jboss@lucasinc.com&gt;</div>
-          <div class="email-field"><span>Date:</span> February 4, 2026, 10:47 AM</div>
-          <div class="email-subject">Subject: Le Calc – Math Functions Routing Through AI (Dev Build Issue)</div>
+        <div class="memo-header">
+          <div class="memo-field"><span>TO:</span> <strong>All Employees</strong></div>
+          <div class="memo-field"><span>FROM:</span> <strong>Lucas Le</strong></div>
+          <div class="memo-field"><span>DATE:</span> <strong>February 4, 2026</strong></div>
+          <div class="memo-field"><span>RE:</span> <strong>NEW STRATEGIC PARTNERSHIP WITH AMD</strong></div>
         </div>
 
-        <div class="email-body">
-          <p>Hi James,</p>
-          <p>I wanted to flag an issue I ran into while testing basic math functions on the Le Calc dev build this morning.</p>
-          <p>All arithmetic operations are currently returning "Thinking..." followed by a rounded answer after a couple seconds of delay. For example, 5/2 returns "Thinking..." and then outputs "2" instead of "2.5" instantly. I've attached the full test results, but this behavior is consistent across addition, subtraction, multiplication, and division.</p>
-          <p>I believe the issue is that operations are being routed through the AI-integrated functions. My understanding was that standard math should calculate instantly on-device, with AI reserved for advanced features only.</p>
-          <p>Given the February 18 deliverable for working calculator functions, I wanted to bring this to your attention early. Let me know how you'd like me to proceed.</p>
-          <p>Thanks,</p>
-        </div>
-
-        <div class="email-signature">
-          <strong>Lucas Le</strong><br>
-          Junior Engineer<br>
-          206-581-XXXX
+        <div class="memo-body">
+          <p>I am excited to announce that Lucas Inc. has entered into a strategic partnership with AMD, a global leader in high-performance computing and semiconductor technology. Together, we will co-develop our next product: the Le Calc, an AI-integrated calculator designed for students.</p>
+          
+          <p>Under this agreement, AMD will provide the processing technology and chip architecture that will power the Le Calc's AI capabilities. Our team will lead product design, AI software development, and distribution through our established retail channels. This partnership brings together AMD's industry-leading silicon expertise with our strengths in consumer electronics and our commitment to putting consumers first.</p>
+          
+          <p>Five years ago, we launched Lucas Inc. with the Le Pen and a simple belief: that thoughtful technology can improve everyday life. The Le Calc represents the next chapter in that mission. By partnering with AMD, we are positioning ourselves to deliver a product that meets the high standards our customers expect from us.</p>
+          
+          <p>The Le Calc is on track to ship in Q3 2026.</p>
+          
+          <p>I want to extend my thanks to our Business Development team for their work in securing this partnership.</p>
+          
+          <p>A public press release is scheduled for next week. Please do not share this information externally until that announcement has been made. For questions, please reach out to your manager or contact the Business Development team directly.</p>
+          
+          <p>Thank you for everything you do to make Lucas Inc. what it is. I look forward to building on this momentum together.</p>
         </div>
       </div>
     </main>
